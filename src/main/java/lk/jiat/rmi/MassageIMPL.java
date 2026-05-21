@@ -23,4 +23,9 @@ public class MassageIMPL extends UnicastRemoteObject implements Massage, Remote 
     public Data getData() throws RemoteException {
         return new Data(1, "Barana");
     }
+
+    @Override
+    public String getResult(int num1, int num2) throws RemoteException {
+        return String.valueOf(num1 * num2);
+    }
 }
